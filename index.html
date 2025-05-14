@@ -1,0 +1,470 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+							<style>
+								body {
+									background-color: white; /* Ensure the iframe has a white background */
+								}
+
+								
+							</style>
+                        </head>
+                        <body>
+                            <!DOCTYPE html>
+<html lang="zh-MO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>澳門净能量視頻創作策劃書</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #87CEEB;  /* 天空蓝 */
+            --secondary: #4682B4; /* 钢蓝色 */
+            --accent: #1E90FF;   /* 道奇蓝 */
+            --dark: #1a2b5c;
+            --light: #f8faff;
+            --card-bg: rgba(255, 255, 255, 0.95);
+            --glass-bg: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--dark);
+            line-height: 1.6;
+            padding: 3rem 1rem;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* 环保科技融合背景 */
+        .background-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.05;
+        }
+
+        .element {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: float 15s infinite ease-in-out;
+        }
+
+        .element:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/1163/1163661.png');
+            animation-delay: 0s;
+        }
+
+        .element:nth-child(2) {
+            top: 30%;
+            right: 15%;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/73/73661.png');
+            animation-delay: 3s;
+        }
+
+        .element:nth-child(3) {
+            bottom: 20%;
+            left: 25%;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/1163/1163606.png');
+            animation-delay: 6s;
+        }
+
+        .element:nth-child(4) {
+            bottom: 30%;
+            right: 30%;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/3034/3034690.png');
+            animation-delay: 9s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        /* 科技网格背景 */
+        .grid-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            background-image: 
+                linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: 0;
+            pointer-events: none;
+            transform: rotate(45deg);
+            animation: gridMove 60s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0) rotate(45deg); }
+            100% { transform: translate(-40px, -40px) rotate(45deg); }
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(to right, var(--accent), #4682B4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            letter-spacing: 3px;
+            position: relative;
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -15px;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, var(--accent), transparent);
+        }
+
+        .category {
+            margin-bottom: 5rem;
+            padding: 2.5rem 3rem;
+            background: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-left: 8px solid var(--accent);
+            position: relative;
+            transition: transform 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+        }
+
+        .category::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: -4px;
+            width: 24px;
+            height: 24px;
+            background: url('https://cdn-icons-png.flaticon.com/512/3034/3034690.png') no-repeat center center / contain;
+            opacity: 0.3;
+        }
+
+        .category-title {
+            font-size: 2.2rem;
+            color: var(--accent);
+            margin-bottom: 2.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .category-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.2rem;
+            width: 5px;
+            height: 1.2em;
+            background: linear-gradient(to bottom, var(--accent), #4682B4);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+            border: 1px solid rgba(30,144,255,0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(30,144,255,0.15);
+        }
+
+        .card-content {
+            padding: 2rem 1.8rem;
+            position: relative;
+        }
+
+        .card-number {
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .card-number::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: url('https://cdn-icons-png.flaticon.com/512/3034/3034676.png') no-repeat center center / contain;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.2rem;
+            color: var(--dark);
+            min-height: 60px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .card-description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card:hover .card-description {
+            max-height: 200px;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--accent), #4682B4);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .category-title {
+                font-size: 1.8rem;
+            }
+            
+            .card-number::before {
+                width: 14px;
+                height: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-overlay"></div>
+    <div class="background-elements">
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1>澳門净能量視頻創作策劃書</h1>
+            <p style="color: var(--accent); font-size: 1.2rem;">用影像解碼城市永續發展命脈</p>
+        </header>
+
+        <!-- 痛點警示類 -->
+        <section class="category">
+            <h2 class="category-title">1 痛點警示類：用危機故事引發共鳴</h2>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-number">1.1</div>
+                        <h3>印巴衝突起源：一場持續 20 年的 "水資源戰爭"</h3>
+                        <div class="card-description">
+                            從克什米爾冰川消融到農田龜裂，探討地緣政治中被遺忘的液態黃金爭奪戰
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-number">1.2</div>
+                        <h3>NASA 警告：2040 年全球 50 億人將面臨 "水破產"</h3>
+                        <div class="card-description">
+                            解密衛星數據揭示的末來版圖，當沙漠吞噬城市如何預演人類文明危機
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-number">1.3</div>
+                        <h3>日本水俁病遺孤：50 年後仍在流淌的悲劇</h3>
+                        <div class="card-description">
+                            跟拍汞污染受害者第二代，環境正義的遲來如何撕裂世代記憶與信任
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 科技腦洞類 -->
+        <section class="category">
+            <h2 class="category-title">2 科技腦洞類：未來水世界概念實驗室</h2>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-number">2.1</div>
+                        <h3>假如人類移居火星：第一批移民的淨水日記</h3>
+                        <div class="card-description">
+                            模擬紅色星球上的水循環系統，從冰蓋開採到太空淋浴的極限設計
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-number">2.2</div>
+                        <h3>2077 年的自來水：打開龍頭就能喝的 "量子水"</h3>
+                        <div class="card-description">
+                            探索納米過濾技術突破，水分子結構重組帶來的健康革命
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-number">2.3</div>
+                        <h3>當淨水器學會思考：濾芯的 AI 獨白</h3>
+                        <div class="card-description">
+                            擬人化智能家居設備，解析水質數據背後的生存哲學
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 文化歷史類 -->
+        <section class="category">
+            <h2 class="category-title">3 文化歷史類：時間深處的水智慧</h2>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-number">3.1</div>
+                        <h3>敦煌壁畫裡的淨水黑科技：1400 年前的古人怎麼喝水？</h3>
+                        <div class="card-description">
+                            解密絲路古道上的水窖系統，現代實驗重現沙濾凈水技術
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-number">3.2</div>
+                        <h3>英國女王的 "死亡下午茶"：鉛水管如何毒殺 6 位君主</h3>
+                        <div class="card-description">
+                            從泰晤士河污染到王室飲用水危機，重構工業革命的暗黑篇章
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-number">3.3</div>
+                        <h3>澳門 "壓咸補淡" 往事：老輩人如何對抗海水倒灌？</h3>
+                        <div class="card-description">
+                            口述歷史結合GIS地圖，解構珠江口鹹潮應對的百年智慧
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 本地洞察類 -->
+        <section class="category">
+            <h2 class="category-title">4 本地洞察類：澳門水議題解剖室</h2>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-number">4.1</div>
+                        <h3>澳門唐樓 30 年水管大揭秘：擰開龍頭流出 "鐵鏽咖啡"</h3>
+                        <div class="card-description">
+                            工程師實測老舊社區水質，探討都市更新中的隱形健康風險
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-number">4.2</div>
+                        <h3>澳門雨季生存指南：雨水收集系統能喝嗎？</h3>
+                        <div class="card-description">
+                            實測天台集水裝置，分析亞熱帶氣候下的另類供水方案
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-number">4.3</div>
+                        <h3>橫琴跨境通勤族的飲水煩惱：一河之隔水質差多少？</h3>
+                        <div class="card-description">
+                            對比實驗揭露灣區標準差異，探討跨境生活圈的基礎設施協調
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+
+
+							<script>
+                            	
+							</script>
+                        </body>
+                        </html>
+                    
